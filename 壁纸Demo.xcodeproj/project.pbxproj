@@ -28,6 +28,10 @@
 		080AD7061DB0B3F7004E1FCB /* BZWaterfallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7051DB0B3F7004E1FCB /* BZWaterfallViewModel.m */; };
 		080AD7091DB0C664004E1FCB /* BZAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7081DB0C664004E1FCB /* BZAPIManager.m */; };
 		080AD70C1DB0C8B3004E1FCB /* BZPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD70B1DB0C8B3004E1FCB /* BZPinModel.m */; };
+		080AD70F1DB49E37004E1FCB /* BZWaterfallCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD70E1DB49E37004E1FCB /* BZWaterfallCellViewModel.m */; };
+		080AD7121DB49E58004E1FCB /* BZWaterfallViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7111DB49E58004E1FCB /* BZWaterfallViewCell.m */; };
+		084CEB671DB4C30100CED719 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 084CEB661DB4C30100CED719 /* icon.png */; };
+		084CEB6A1DB4D6FA00CED719 /* BZDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 084CEB691DB4D6FA00CED719 /* BZDetailViewCell.m */; };
 		3A8E08CC87B2682E98466BAD /* libPods-壁纸Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99025C7C7568569B6419AB0E /* libPods-壁纸Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,13 @@
 		080AD7081DB0C664004E1FCB /* BZAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BZAPIManager.m; path = Model/BZAPIManager.m; sourceTree = "<group>"; };
 		080AD70A1DB0C8B3004E1FCB /* BZPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZPinModel.h; sourceTree = "<group>"; };
 		080AD70B1DB0C8B3004E1FCB /* BZPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZPinModel.m; sourceTree = "<group>"; };
+		080AD70D1DB49E37004E1FCB /* BZWaterfallCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallCellViewModel.h; sourceTree = "<group>"; };
+		080AD70E1DB49E37004E1FCB /* BZWaterfallCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallCellViewModel.m; sourceTree = "<group>"; };
+		080AD7101DB49E58004E1FCB /* BZWaterfallViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallViewCell.h; sourceTree = "<group>"; };
+		080AD7111DB49E58004E1FCB /* BZWaterfallViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallViewCell.m; sourceTree = "<group>"; };
+		084CEB661DB4C30100CED719 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		084CEB681DB4D6FA00CED719 /* BZDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZDetailViewCell.h; sourceTree = "<group>"; };
+		084CEB691DB4D6FA00CED719 /* BZDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZDetailViewCell.m; sourceTree = "<group>"; };
 		3FA96DF07CAD804BDA1AEED5 /* Pods-壁纸Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-壁纸Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-壁纸Demo/Pods-壁纸Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		8414BF2C371AD47D42960BA9 /* Pods-壁纸Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-壁纸Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-壁纸Demo/Pods-壁纸Demo.release.xcconfig"; sourceTree = "<group>"; };
 		99025C7C7568569B6419AB0E /* libPods-壁纸Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-壁纸Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				080AD6F31DB0A85E004E1FCB /* Images.xcassets */,
+				084CEB661DB4C30100CED719 /* icon.png */,
 				080AD68D1DB08512004E1FCB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -241,6 +253,8 @@
 				080AD6FF1DB0B149004E1FCB /* BZDetailModule.m */,
 				080AD7011DB0B17A004E1FCB /* BZDetailViewController.h */,
 				080AD7021DB0B17A004E1FCB /* BZDetailViewController.m */,
+				084CEB681DB4D6FA00CED719 /* BZDetailViewCell.h */,
+				084CEB691DB4D6FA00CED719 /* BZDetailViewCell.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -276,6 +290,10 @@
 				080AD6D71DB0895F004E1FCB /* BZWaterfallViewController.m */,
 				080AD7041DB0B3F7004E1FCB /* BZWaterfallViewModel.h */,
 				080AD7051DB0B3F7004E1FCB /* BZWaterfallViewModel.m */,
+				080AD7101DB49E58004E1FCB /* BZWaterfallViewCell.h */,
+				080AD7111DB49E58004E1FCB /* BZWaterfallViewCell.m */,
+				080AD70D1DB49E37004E1FCB /* BZWaterfallCellViewModel.h */,
+				080AD70E1DB49E37004E1FCB /* BZWaterfallCellViewModel.m */,
 			);
 			path = Waterfall;
 			sourceTree = "<group>";
@@ -418,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080AD6F41DB0A85E004E1FCB /* Images.xcassets in Resources */,
+				084CEB671DB4C30100CED719 /* icon.png in Resources */,
 				080AD69C1DB08512004E1FCB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080AD6D01DB0885B004E1FCB /* UIView+SuperView.m in Sources */,
+				080AD70F1DB49E37004E1FCB /* BZWaterfallCellViewModel.m in Sources */,
 				080AD6911DB08512004E1FCB /* AppDelegate.m in Sources */,
 				080AD7001DB0B149004E1FCB /* BZDetailModule.m in Sources */,
 				080AD6DE1DB08998004E1FCB /* BZSettingViewController.m in Sources */,
@@ -505,9 +525,11 @@
 				080AD6FD1DB0B03F004E1FCB /* BZSettingModule.m in Sources */,
 				080AD6D81DB0895F004E1FCB /* BZWaterfallViewController.m in Sources */,
 				080AD6D21DB0885B004E1FCB /* UIColor+LightRandom.m in Sources */,
+				084CEB6A1DB4D6FA00CED719 /* BZDetailViewCell.m in Sources */,
 				080AD70C1DB0C8B3004E1FCB /* BZPinModel.m in Sources */,
 				080AD6FA1DB0AF08004E1FCB /* BZTagsModule.m in Sources */,
 				080AD7031DB0B17A004E1FCB /* BZDetailViewController.m in Sources */,
+				080AD7121DB49E58004E1FCB /* BZWaterfallViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Protocols.h"
 
-@interface BZDetailViewController : UICollectionViewController
+@interface BZDetailViewController : UICollectionViewController <BZDetailViewControllerProtocol>
+
+/** 当前的index */
+@property (nonatomic) NSInteger currentPinIndex;
+
+/** 弹出时初始化的index */
+@property (nonatomic) NSInteger initPinIndex;
+
+
+
 
 @end

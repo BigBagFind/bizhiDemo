@@ -24,6 +24,13 @@
     return instance;
 }
 
+
+// 14565555
+// http://api.huaban.com/fm/wallpaper/pins?limit=21&tag=
+// http://api.huaban.com/fm/wallpaper/pins?limit=21&max=14565535&tag=
+// http://api.huaban.com/fm/wallpaper/pins?limit=21&max=14565514&tag=
+// http://api.huaban.com/fm/wallpaper/pins?limit=21&max=14565491&tag=
+
 /** 根据tag和分页获取壁纸 */
 - (RACSignal *)fetchPinsWithTag:(NSString *)tag offset:(NSInteger)offset limit:(NSInteger)limit {
     // 判断上拉或者下拉
@@ -37,6 +44,7 @@
 
 /** 基础获取壁纸接口 */
 - (RACSignal *)fetchPinsWithURL:(NSString *)urlString {
+    
     return [[self rac_GET:urlString parameters:nil] map:^id(RACTuple *tuple) {
         NSLog(@"result :\n%@",tuple);
         NSDictionary *response = tuple.first;
@@ -50,6 +58,7 @@
 
 /** 基础获取分类接口 */
 - (RACSignal *)fetchTags {
+    
     return [[self rac_GET:@"http://api.huaban.com/fm/wallpaper/tags" parameters:nil] map:^id(RACTuple *tuple) {
         NSArray *tags = tuple.first;
         NSLog(@"%@",tuple);
@@ -57,6 +66,7 @@
             return [[BZPinModel alloc] initWithDictionary:value error:nil];
         }] array];
     }];
+    
 }
 
 

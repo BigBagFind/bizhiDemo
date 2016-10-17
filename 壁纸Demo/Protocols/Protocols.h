@@ -13,7 +13,11 @@
 /** 瀑布流VC协议 */
 @protocol BZWaterfallViewControllerProtocol <NSObject>
 
+/** 初始化设置分类 */
+- (void)configureWithTag:(NSString *)tag;
 
+/** 初始化设置分类 */
+- (void)configureWithLatest;
 
 @end
 
@@ -23,7 +27,13 @@
 /** 瀑布流VM协议 */
 @protocol BZWaterfallViewModelProtocol <NSObject>
 
+@property (nonatomic) NSArray *pins;
 
+
+- (RACSignal *)fetchPinsWithTag:(NSString *)tag offset:(NSUInteger)offset;
+
+
+- (RACSignal *)fetchMore;
 
 
 @end
@@ -33,6 +43,15 @@
 
 /** 详情VC协议 */
 @protocol BZDetailViewControllerProtocol <NSObject>
+
+
+@property (nonatomic) NSInteger currentPinIndex;
+
+
+@property (nonatomic) NSInteger initPinIndex;
+
+/**  配置对应viewModel */
+- (void)configureWithViewModel:(id<BZWaterfallViewModelProtocol>)viewModel;
 
 
 

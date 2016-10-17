@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Protocols.h"
 
-@interface BZWaterfallViewController : UICollectionViewController
+@interface BZWaterfallViewController : UICollectionViewController <BZWaterfallViewControllerProtocol>
 
 @end

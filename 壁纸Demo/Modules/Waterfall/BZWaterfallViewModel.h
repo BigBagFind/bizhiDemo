@@ -7,7 +7,18 @@
 //
 
 #import <ReactiveViewModel/ReactiveViewModel.h>
+#import "Protocols.h"
 
-@interface BZWaterfallViewModel : RVMViewModel
+
+@interface BZWaterfallViewModel : RVMViewModel <BZWaterfallViewModelProtocol>
+
+
+/** waterfall的分类tag */
+@property (nonatomic) NSString *tag;
+
+/** 壁纸数组 */
+@property (nonatomic) NSArray *pins;
+
+
 
 @end

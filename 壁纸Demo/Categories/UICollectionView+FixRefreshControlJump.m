@@ -26,6 +26,7 @@
         translation.y -= diff * 3.0 / 2.0;
         [self.panGestureRecognizer setTranslation:translation inView:self];
     }
+    
     if ([self respondsToSelector:@selector(setNewContentInset:)]) {
         [self setNewContentInset:contentInset];
     }
