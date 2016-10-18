@@ -18,6 +18,7 @@
 #import "UIView+SuperView.h"
 
 
+
 static NSString * const reuseIdentifier = @"Cell";
 
 
@@ -31,6 +32,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 /** 当前选中的selected */
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+
 
 @end
 
@@ -159,6 +161,13 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.selectedIndexPath) {
+        [self.collectionView scrollToItemAtIndexPath:self.selectedIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
+    }
+}
 
 // http://api.huaban.com/fm/wallpaper/pins?limit=21
 // http://api.huaban.com/fm/wallpaper/pins?limit=21&max=14565535
@@ -208,35 +217,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 
-#pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

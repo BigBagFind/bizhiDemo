@@ -24,6 +24,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     [self setupRootViewController];
     
     
@@ -61,6 +62,7 @@
     tabViewController.viewControllers = @[waterfallNavigationController, tagsNavigationController, settingsNavigationController];
     
     self.window.rootViewController = tabViewController;
+    
     
 }
 

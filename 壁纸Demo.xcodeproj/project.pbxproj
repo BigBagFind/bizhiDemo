@@ -251,10 +251,10 @@
 			children = (
 				080AD6FE1DB0B149004E1FCB /* BZDetailModule.h */,
 				080AD6FF1DB0B149004E1FCB /* BZDetailModule.m */,
-				080AD7011DB0B17A004E1FCB /* BZDetailViewController.h */,
-				080AD7021DB0B17A004E1FCB /* BZDetailViewController.m */,
 				084CEB681DB4D6FA00CED719 /* BZDetailViewCell.h */,
 				084CEB691DB4D6FA00CED719 /* BZDetailViewCell.m */,
+				080AD7011DB0B17A004E1FCB /* BZDetailViewController.h */,
+				080AD7021DB0B17A004E1FCB /* BZDetailViewController.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";

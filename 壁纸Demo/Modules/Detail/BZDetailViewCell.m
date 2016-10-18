@@ -23,7 +23,6 @@
 @implementation BZDetailViewCell
 
 
-
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -42,7 +41,7 @@
         }
         self.progressView.trackTintColor = [UIColor colorWithWhite:0.9 alpha:1];
         [self.contentView addSubview:self.progressView];
-        self.progressView.frame = CGRectMake(100, [UIScreen mainScreen].bounds.size.height / 2, 120, 2);
+        self.progressView.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - 120) / 2, [UIScreen mainScreen].bounds.size.height / 2, 120, 2);
     }
     return self;
 }
@@ -55,9 +54,28 @@
     
     NSURL *imageURL = [NSURL URLWithString:[pin imageURLWithThumbnailWidth:658]];
     self.progressView.hidden = NO;
-    [self.detailImageView sd_setImageWithURL:imageURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
+    [self.detailImageView sd_setImageWithURL:imageURL placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        @strongify(self);
+        [self.progressView setProgress:receivedSize / (float)expectedSize];
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        @strongify(self);
+        self.progressView.hidden = YES;
+        // 换算图片高度
+        NSInteger finalImageHeight = [[UIScreen mainScreen] bounds].size.width / image.size.width * image.size.height;
+        // 大于屏高换算
+        if (finalImageHeight > [[UIScreen mainScreen] bounds].size.height) {
+            self.detailImageView.frame = CGRectMake(0, 0,[[UIScreen mainScreen] bounds].size.width , finalImageHeight);
+            self.detailImageScrollView.contentSize = self.detailImageView.frame.size;
+        }
+        // 出现动画
+        if (cacheType != SDImageCacheTypeMemory) {
+            self.detailImageView.alpha = 0;
+            [UIView animateWithDuration:0.3 animations:^{
+                self.detailImageView.alpha = 1;
+            }];
+        }
     }];
+
 }
 
 
