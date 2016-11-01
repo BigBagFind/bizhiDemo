@@ -22,7 +22,7 @@
 }
 
 - (void)configure {
-    [self bindClass:[BZWaterfallViewController class] toProtocol:@protocol(BZWaterfallViewModelProtocol)];
+    [self bindClass:[BZWaterfallViewController class] toProtocol:@protocol(BZWaterfallViewControllerProtocol)];
 }
 
 

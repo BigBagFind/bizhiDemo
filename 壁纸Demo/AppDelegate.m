@@ -38,7 +38,7 @@
     UITabBarController *tabViewController = [[UITabBarController alloc] init];
     
     // 拿到首页瀑布流Vc
-    UIViewController *waterfallViewController = [[JSObjection defaultInjector] getObject:@protocol(BZWaterfallViewModelProtocol)];
+    UIViewController *waterfallViewController = [[JSObjection defaultInjector] getObject:@protocol(BZWaterfallViewControllerProtocol)];
     
     // 第一个最新nav
     UINavigationController *waterfallNavigationController = [[UINavigationController alloc] initWithRootViewController:waterfallViewController];

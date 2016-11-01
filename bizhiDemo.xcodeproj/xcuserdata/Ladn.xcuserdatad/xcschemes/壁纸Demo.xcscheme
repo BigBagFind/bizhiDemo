@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "080AD6881DB08512004E1FCB"
-               BuildableName = "&#x58c1;&#x7eb8;Demo.app"
-               BlueprintName = "&#x58c1;&#x7eb8;Demo"
-               ReferencedContainer = "container:&#x58c1;&#x7eb8;Demo.xcodeproj">
+               BuildableName = "bizhiDemo.app"
+               BlueprintName = "bizhiDemo"
+               ReferencedContainer = "container:bizhiDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "080AD6A11DB08513004E1FCB"
-               BuildableName = "&#x58c1;&#x7eb8;DemoTests.xctest"
-               BlueprintName = "&#x58c1;&#x7eb8;DemoTests"
-               ReferencedContainer = "container:&#x58c1;&#x7eb8;Demo.xcodeproj">
+               BuildableName = "bizhiDemoTests.xctest"
+               BlueprintName = "bizhiDemoTests"
+               ReferencedContainer = "container:bizhiDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "080AD6AC1DB08513004E1FCB"
-               BuildableName = "&#x58c1;&#x7eb8;DemoUITests.xctest"
-               BlueprintName = "&#x58c1;&#x7eb8;DemoUITests"
-               ReferencedContainer = "container:&#x58c1;&#x7eb8;Demo.xcodeproj">
+               BuildableName = "bizhiDemoUITests.xctest"
+               BlueprintName = "bizhiDemoUITests"
+               ReferencedContainer = "container:bizhiDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "080AD6881DB08512004E1FCB"
-            BuildableName = "&#x58c1;&#x7eb8;Demo.app"
-            BlueprintName = "&#x58c1;&#x7eb8;Demo"
-            ReferencedContainer = "container:&#x58c1;&#x7eb8;Demo.xcodeproj">
+            BuildableName = "bizhiDemo.app"
+            BlueprintName = "bizhiDemo"
+            ReferencedContainer = "container:bizhiDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "080AD6881DB08512004E1FCB"
-            BuildableName = "&#x58c1;&#x7eb8;Demo.app"
-            BlueprintName = "&#x58c1;&#x7eb8;Demo"
-            ReferencedContainer = "container:&#x58c1;&#x7eb8;Demo.xcodeproj">
+            BuildableName = "bizhiDemo.app"
+            BlueprintName = "bizhiDemo"
+            ReferencedContainer = "container:bizhiDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "080AD6881DB08512004E1FCB"
-            BuildableName = "&#x58c1;&#x7eb8;Demo.app"
-            BlueprintName = "&#x58c1;&#x7eb8;Demo"
-            ReferencedContainer = "container:&#x58c1;&#x7eb8;Demo.xcodeproj">
+            BuildableName = "bizhiDemo.app"
+            BlueprintName = "bizhiDemo"
+            ReferencedContainer = "container:bizhiDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

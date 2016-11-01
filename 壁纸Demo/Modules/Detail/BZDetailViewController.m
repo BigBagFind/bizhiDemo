@@ -23,7 +23,7 @@
 @property (nonatomic,strong) id <BZWaterfallViewModelProtocol> viewModel;
 
 
-/** <> */
+/** 弹出的视图 */
 @property (nonatomic) UIView *actionButtonsContainerView;
 
 @end
@@ -59,6 +59,8 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 
+#pragma mark - LifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -71,8 +73,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.view addSubview:self.actionButtonsContainerView];
     
     
-    
-    
     // 监听scrollViewDelegate
     @weakify(self);
     [[self rac_signalForSelector:@selector(scrollViewDidScroll:) fromProtocol:@protocol(UIScrollViewDelegate)] subscribeNext:^(RACTuple *tuple) {
@@ -83,7 +83,7 @@ static NSString * const reuseIdentifier = @"Cell";
         
         // 如果滑动超过当前的内容，
         // 则加载更多
-        if (scrollView.isDragging && scrollView.contentSize.width <= (scrollView.contentOffset.x + scrollView.width)) {
+         if (scrollView.isDragging && scrollView.contentSize.width <= (scrollView.contentOffset.x + scrollView.width)) {
             
             [[self.viewModel fetchMore] subscribeNext:^(NSArray *pins) {
                 if (!pins.count) {
@@ -144,7 +144,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self addSwipeGestureToCell:cell];
     [self addTouchGestureToCell:cell];
     
-    
+   
     return cell;
 }
 

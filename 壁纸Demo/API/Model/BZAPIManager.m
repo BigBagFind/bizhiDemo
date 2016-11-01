@@ -10,7 +10,7 @@
 #import <ReactiveCocoa.h>
 #import <AFNetworking-RACExtensions/AFHTTPRequestOperationManager+RACSupport.h>
 #import "BZPinModel.h"
-
+#import "BZTagModel.h"
 
 @implementation BZAPIManager
 
@@ -63,7 +63,7 @@
         NSArray *tags = tuple.first;
         NSLog(@"%@",tuple);
         return [[tags.rac_sequence map:^id(id value) {
-            return [[BZPinModel alloc] initWithDictionary:value error:nil];
+            return [[BZTagModel alloc] initWithDictionary:value error:nil];
         }] array];
     }];
     

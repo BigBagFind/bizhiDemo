@@ -1,8 +1,8 @@
 //
 //  BZPinModel.h
-//  壁纸Demo
+//  bizhiDemo
 //
-//  Created by 铁拳科技 on 16/10/14.
+//  Created by 吴玉铁 on 2016/10/28.
 //  Copyright © 2016年 铁哥哥. All rights reserved.
 //
 
@@ -10,11 +10,14 @@
 
 @interface BZPinModel : JSONModel
 
-
+// 自动转换类型
+// nsnumber
 @property (nonatomic, assign) NSInteger pinId;
 
+// file - > key
 @property (nonatomic, copy) NSString *key;
 
+// nsnumber
 @property (nonatomic, assign) NSInteger seq;
 
 

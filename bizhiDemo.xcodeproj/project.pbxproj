@@ -27,12 +27,13 @@
 		080AD7031DB0B17A004E1FCB /* BZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7021DB0B17A004E1FCB /* BZDetailViewController.m */; };
 		080AD7061DB0B3F7004E1FCB /* BZWaterfallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7051DB0B3F7004E1FCB /* BZWaterfallViewModel.m */; };
 		080AD7091DB0C664004E1FCB /* BZAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7081DB0C664004E1FCB /* BZAPIManager.m */; };
-		080AD70C1DB0C8B3004E1FCB /* BZPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD70B1DB0C8B3004E1FCB /* BZPinModel.m */; };
 		080AD70F1DB49E37004E1FCB /* BZWaterfallCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD70E1DB49E37004E1FCB /* BZWaterfallCellViewModel.m */; };
 		080AD7121DB49E58004E1FCB /* BZWaterfallViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AD7111DB49E58004E1FCB /* BZWaterfallViewCell.m */; };
 		084CEB671DB4C30100CED719 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 084CEB661DB4C30100CED719 /* icon.png */; };
 		084CEB6A1DB4D6FA00CED719 /* BZDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 084CEB691DB4D6FA00CED719 /* BZDetailViewCell.m */; };
 		3A8E08CC87B2682E98466BAD /* libPods-壁纸Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99025C7C7568569B6419AB0E /* libPods-壁纸Demo.a */; };
+		8174905C1DC3521F000127CD /* BZPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8174905B1DC3521F000127CD /* BZPinModel.m */; };
+		8174905F1DC35232000127CD /* BZTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8174905E1DC35232000127CD /* BZTagModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,16 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		080AD6891DB08512004E1FCB /* 壁纸Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "壁纸Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		080AD6891DB08512004E1FCB /* bizhiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bizhiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		080AD68D1DB08512004E1FCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		080AD68F1DB08512004E1FCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		080AD6901DB08512004E1FCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		080AD69B1DB08512004E1FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		080AD69D1DB08512004E1FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		080AD6A21DB08513004E1FCB /* 壁纸DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "壁纸DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		080AD6A21DB08513004E1FCB /* bizhiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bizhiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		080AD6A61DB08513004E1FCB /* __DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __DemoTests.m; sourceTree = "<group>"; };
 		080AD6A81DB08513004E1FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		080AD6AD1DB08513004E1FCB /* 壁纸DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "壁纸DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		080AD6AD1DB08513004E1FCB /* bizhiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bizhiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		080AD6B11DB08513004E1FCB /* __DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __DemoUITests.m; sourceTree = "<group>"; };
 		080AD6B31DB08513004E1FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		080AD6C81DB0885B004E1FCB /* UIView+SuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperView.h"; sourceTree = "<group>"; };
@@ -95,8 +96,6 @@
 		080AD7051DB0B3F7004E1FCB /* BZWaterfallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallViewModel.m; sourceTree = "<group>"; };
 		080AD7071DB0C664004E1FCB /* BZAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BZAPIManager.h; path = Model/BZAPIManager.h; sourceTree = "<group>"; };
 		080AD7081DB0C664004E1FCB /* BZAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BZAPIManager.m; path = Model/BZAPIManager.m; sourceTree = "<group>"; };
-		080AD70A1DB0C8B3004E1FCB /* BZPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZPinModel.h; sourceTree = "<group>"; };
-		080AD70B1DB0C8B3004E1FCB /* BZPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZPinModel.m; sourceTree = "<group>"; };
 		080AD70D1DB49E37004E1FCB /* BZWaterfallCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallCellViewModel.h; sourceTree = "<group>"; };
 		080AD70E1DB49E37004E1FCB /* BZWaterfallCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallCellViewModel.m; sourceTree = "<group>"; };
 		080AD7101DB49E58004E1FCB /* BZWaterfallViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallViewCell.h; sourceTree = "<group>"; };
@@ -105,6 +104,10 @@
 		084CEB681DB4D6FA00CED719 /* BZDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZDetailViewCell.h; sourceTree = "<group>"; };
 		084CEB691DB4D6FA00CED719 /* BZDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZDetailViewCell.m; sourceTree = "<group>"; };
 		3FA96DF07CAD804BDA1AEED5 /* Pods-壁纸Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-壁纸Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-壁纸Demo/Pods-壁纸Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		8174905A1DC3521F000127CD /* BZPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZPinModel.h; sourceTree = "<group>"; };
+		8174905B1DC3521F000127CD /* BZPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZPinModel.m; sourceTree = "<group>"; };
+		8174905D1DC35232000127CD /* BZTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTagModel.h; sourceTree = "<group>"; };
+		8174905E1DC35232000127CD /* BZTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTagModel.m; sourceTree = "<group>"; };
 		8414BF2C371AD47D42960BA9 /* Pods-壁纸Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-壁纸Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-壁纸Demo/Pods-壁纸Demo.release.xcconfig"; sourceTree = "<group>"; };
 		99025C7C7568569B6419AB0E /* libPods-壁纸Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-壁纸Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,9 +153,9 @@
 		080AD68A1DB08512004E1FCB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				080AD6891DB08512004E1FCB /* 壁纸Demo.app */,
-				080AD6A21DB08513004E1FCB /* 壁纸DemoTests.xctest */,
-				080AD6AD1DB08513004E1FCB /* 壁纸DemoUITests.xctest */,
+				080AD6891DB08512004E1FCB /* bizhiDemo.app */,
+				080AD6A21DB08513004E1FCB /* bizhiDemoTests.xctest */,
+				080AD6AD1DB08513004E1FCB /* bizhiDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,8 +217,10 @@
 		080AD6C01DB087F6004E1FCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				080AD70A1DB0C8B3004E1FCB /* BZPinModel.h */,
-				080AD70B1DB0C8B3004E1FCB /* BZPinModel.m */,
+				8174905A1DC3521F000127CD /* BZPinModel.h */,
+				8174905B1DC3521F000127CD /* BZPinModel.m */,
+				8174905D1DC35232000127CD /* BZTagModel.h */,
+				8174905E1DC35232000127CD /* BZTagModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,9 +331,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		080AD6881DB08512004E1FCB /* 壁纸Demo */ = {
+		080AD6881DB08512004E1FCB /* bizhiDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 080AD6B61DB08513004E1FCB /* Build configuration list for PBXNativeTarget "壁纸Demo" */;
+			buildConfigurationList = 080AD6B61DB08513004E1FCB /* Build configuration list for PBXNativeTarget "bizhiDemo" */;
 			buildPhases = (
 				6416A78459F5666C4D0C2062 /* [CP] Check Pods Manifest.lock */,
 				080AD6851DB08512004E1FCB /* Sources */,
@@ -341,14 +346,14 @@
 			);
 			dependencies = (
 			);
-			name = "壁纸Demo";
+			name = bizhiDemo;
 			productName = "壁纸Demo";
-			productReference = 080AD6891DB08512004E1FCB /* 壁纸Demo.app */;
+			productReference = 080AD6891DB08512004E1FCB /* bizhiDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		080AD6A11DB08513004E1FCB /* 壁纸DemoTests */ = {
+		080AD6A11DB08513004E1FCB /* bizhiDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 080AD6B91DB08513004E1FCB /* Build configuration list for PBXNativeTarget "壁纸DemoTests" */;
+			buildConfigurationList = 080AD6B91DB08513004E1FCB /* Build configuration list for PBXNativeTarget "bizhiDemoTests" */;
 			buildPhases = (
 				080AD69E1DB08513004E1FCB /* Sources */,
 				080AD69F1DB08513004E1FCB /* Frameworks */,
@@ -359,14 +364,14 @@
 			dependencies = (
 				080AD6A41DB08513004E1FCB /* PBXTargetDependency */,
 			);
-			name = "壁纸DemoTests";
+			name = bizhiDemoTests;
 			productName = "壁纸DemoTests";
-			productReference = 080AD6A21DB08513004E1FCB /* 壁纸DemoTests.xctest */;
+			productReference = 080AD6A21DB08513004E1FCB /* bizhiDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		080AD6AC1DB08513004E1FCB /* 壁纸DemoUITests */ = {
+		080AD6AC1DB08513004E1FCB /* bizhiDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 080AD6BC1DB08513004E1FCB /* Build configuration list for PBXNativeTarget "壁纸DemoUITests" */;
+			buildConfigurationList = 080AD6BC1DB08513004E1FCB /* Build configuration list for PBXNativeTarget "bizhiDemoUITests" */;
 			buildPhases = (
 				080AD6A91DB08513004E1FCB /* Sources */,
 				080AD6AA1DB08513004E1FCB /* Frameworks */,
@@ -377,9 +382,9 @@
 			dependencies = (
 				080AD6AF1DB08513004E1FCB /* PBXTargetDependency */,
 			);
-			name = "壁纸DemoUITests";
+			name = bizhiDemoUITests;
 			productName = "壁纸DemoUITests";
-			productReference = 080AD6AD1DB08513004E1FCB /* 壁纸DemoUITests.xctest */;
+			productReference = 080AD6AD1DB08513004E1FCB /* bizhiDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -410,7 +415,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 080AD6841DB08512004E1FCB /* Build configuration list for PBXProject "壁纸Demo" */;
+			buildConfigurationList = 080AD6841DB08512004E1FCB /* Build configuration list for PBXProject "bizhiDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -423,9 +428,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				080AD6881DB08512004E1FCB /* 壁纸Demo */,
-				080AD6A11DB08513004E1FCB /* 壁纸DemoTests */,
-				080AD6AC1DB08513004E1FCB /* 壁纸DemoUITests */,
+				080AD6881DB08512004E1FCB /* bizhiDemo */,
+				080AD6A11DB08513004E1FCB /* bizhiDemoTests */,
+				080AD6AC1DB08513004E1FCB /* bizhiDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -521,12 +526,13 @@
 				080AD6D11DB0885B004E1FCB /* UICollectionView+FixRefreshControlJump.m in Sources */,
 				080AD68E1DB08512004E1FCB /* main.m in Sources */,
 				080AD7061DB0B3F7004E1FCB /* BZWaterfallViewModel.m in Sources */,
+				8174905C1DC3521F000127CD /* BZPinModel.m in Sources */,
 				080AD7091DB0C664004E1FCB /* BZAPIManager.m in Sources */,
 				080AD6FD1DB0B03F004E1FCB /* BZSettingModule.m in Sources */,
 				080AD6D81DB0895F004E1FCB /* BZWaterfallViewController.m in Sources */,
+				8174905F1DC35232000127CD /* BZTagModel.m in Sources */,
 				080AD6D21DB0885B004E1FCB /* UIColor+LightRandom.m in Sources */,
 				084CEB6A1DB4D6FA00CED719 /* BZDetailViewCell.m in Sources */,
-				080AD70C1DB0C8B3004E1FCB /* BZPinModel.m in Sources */,
 				080AD6FA1DB0AF08004E1FCB /* BZTagsModule.m in Sources */,
 				080AD7031DB0B17A004E1FCB /* BZDetailViewController.m in Sources */,
 				080AD7121DB49E58004E1FCB /* BZWaterfallViewCell.m in Sources */,
@@ -554,12 +560,12 @@
 /* Begin PBXTargetDependency section */
 		080AD6A41DB08513004E1FCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 080AD6881DB08512004E1FCB /* 壁纸Demo */;
+			target = 080AD6881DB08512004E1FCB /* bizhiDemo */;
 			targetProxy = 080AD6A31DB08513004E1FCB /* PBXContainerItemProxy */;
 		};
 		080AD6AF1DB08513004E1FCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 080AD6881DB08512004E1FCB /* 壁纸Demo */;
+			target = 080AD6881DB08512004E1FCB /* bizhiDemo */;
 			targetProxy = 080AD6AE1DB08513004E1FCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -705,7 +711,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tiequantech.--DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/壁纸Demo.app/壁纸Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bizhiDemo.app/bizhiDemo";
 			};
 			name = Debug;
 		};
@@ -718,7 +724,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tiequantech.--DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/壁纸Demo.app/壁纸Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bizhiDemo.app/bizhiDemo";
 			};
 			name = Release;
 		};
@@ -749,7 +755,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		080AD6841DB08512004E1FCB /* Build configuration list for PBXProject "壁纸Demo" */ = {
+		080AD6841DB08512004E1FCB /* Build configuration list for PBXProject "bizhiDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				080AD6B41DB08513004E1FCB /* Debug */,
@@ -758,7 +764,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		080AD6B61DB08513004E1FCB /* Build configuration list for PBXNativeTarget "壁纸Demo" */ = {
+		080AD6B61DB08513004E1FCB /* Build configuration list for PBXNativeTarget "bizhiDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				080AD6B71DB08513004E1FCB /* Debug */,
@@ -767,7 +773,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		080AD6B91DB08513004E1FCB /* Build configuration list for PBXNativeTarget "壁纸DemoTests" */ = {
+		080AD6B91DB08513004E1FCB /* Build configuration list for PBXNativeTarget "bizhiDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				080AD6BA1DB08513004E1FCB /* Debug */,
@@ -776,7 +782,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		080AD6BC1DB08513004E1FCB /* Build configuration list for PBXNativeTarget "壁纸DemoUITests" */ = {
+		080AD6BC1DB08513004E1FCB /* Build configuration list for PBXNativeTarget "bizhiDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				080AD6BD1DB08513004E1FCB /* Debug */,
